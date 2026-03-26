@@ -3,9 +3,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DemoModule } from './demo/demo.module';
 import { FileGeneratedModule } from './file-generated/file-generated.module';
+import { StreamGeneratedModule } from './stream-generated/stream-generated.module';
 
 @Module({
-  imports: [DemoModule, FileGeneratedModule],
+  imports: [DemoModule, FileGeneratedModule, StreamGeneratedModule],
   controllers: [AppController],
   providers: [AppService],
 })
